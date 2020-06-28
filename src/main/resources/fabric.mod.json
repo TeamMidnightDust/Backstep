@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "backstep",
+  "version": "1.0.0",
+
+  "name": "Backstep",
+  "description": "Adds pigstep to 1.15.2! Can be found in nether fortresses.",
+  "authors": [
+    "Motschen",
+    "TeamMidnightDust"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/mc-mods/backstep",
+    "sources": "https://github.com/TeamMidnightDust/Backstep"
+  },
+
+  "license": "MIT",
+  "icon": "assets/backstep/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "eu.midnightdust.motschen.backstep.Backstep"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "netheriteplus": "*",
+	"betternether": "*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+"music_disc.pigstep": {
+    "sounds": [
+      {
+        "name": "minecraft:music/records/pigstep",
+        "stream": true
+      }
+    ]
+  }
+}
