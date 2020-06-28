@@ -20,7 +20,6 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class BackstepMusicDiscItem extends MusicDiscItem {
@@ -61,7 +60,7 @@ public class BackstepMusicDiscItem extends MusicDiscItem {
     }
 
     @Environment(EnvType.CLIENT)
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(this.getDescription().formatted(Formatting.GRAY));
     }
 
@@ -70,7 +69,6 @@ public class BackstepMusicDiscItem extends MusicDiscItem {
         return new TranslatableText(this.getTranslationKey() + ".desc", new Object[0]);
     }
 
-    @Nullable
     @Environment(EnvType.CLIENT)
     public static BackstepMusicDiscItem bySound(SoundEvent sound) {
         return BackstepMusicDiscItem.bySound(BackstepSoundEvent.MUSIC_DISC_PIGSTEP);
